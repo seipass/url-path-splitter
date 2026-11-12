@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "url-path-splitter"
+version = "1.0.0"
+description = "Decode and return nonempty URL path segments."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "seipass"}]
+
+[project.scripts]
+url-path-splitter = "url_path_splitter:main"
+
+[tool.setuptools]
+py-modules = ["url_path_splitter"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
